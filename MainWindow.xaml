@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Canvas MouseRightButtonDown="Canvas_MouseRightButtonDown"
+            Background="Azure">
+            <TextBlock Text="色つきのどこかで右クリック" Background="Transparent"/>
+        </Canvas>
     </Grid>
 </Window>

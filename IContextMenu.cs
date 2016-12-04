@@ -301,6 +301,14 @@ namespace ShellContextMenu
             int nMaxCount,
             uint uFlags);
 
+        [DllImport("user32.dll")]
+        public extern static bool TrackPopupMenu(
+            IntPtr hMenu,
+            uint uFlags,
+            int x, int y,
+            int nReserved, 
+            IntPtr hWnd,
+            IntPtr pRect);
     }
 
     enum MF
